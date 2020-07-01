@@ -1,10 +1,9 @@
 package com.killers;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldController {
@@ -19,12 +18,14 @@ public class HelloWorldController {
 		return "ProcessingForm";
 	}*/
 	
+	
+	//HttpServletRequest request
 	@RequestMapping("/processForm")
-	public String processForm(HttpServletRequest request, Model model) {
-		String nombre = request.getParameter("UserName");
+	public String processForm(@RequestParam("UserName") String name, Model model) {
+		//String nombre = request.getParameter("UserName");
 		
 		//Adding info to the model
-		model.addAttribute("message", nombre.concat(" you are the best"));
+		model.addAttribute("message", name.concat(" you are the best"));
 		
 		return "ProcessingForm";
 	}
