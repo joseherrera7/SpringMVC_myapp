@@ -2,7 +2,7 @@ package com.killers;
 
 import java.io.Serializable;
 
-public class Car extends Vehicle implements Serializable {
+public class Car extends Vehicle {
 	Car(String typeOfVehicle) {
 		super(typeOfVehicle);
 		// TODO Auto-generated constructor stub

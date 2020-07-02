@@ -1,7 +1,16 @@
 package com.killers;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class PersonImp implements Person {
+	
+	@NotNull
+	@Size(min=2, message="* Required")
 	private String firstName;
+	
+	@NotNull
+	@Size(min=2, message="* Required")
 	private String lastName;
 	private String email;
 	private String cellphone;

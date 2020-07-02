@@ -10,8 +10,6 @@ public class App {
 		person.setCellphone("44565679");
 		person.setFirstName("Juan");
 		person.setLastName("Pérez");
-		person.setId(1);
-		person.setAddress("Mexico");
 		System.out.println(person.getGreetings());
 	}
 
