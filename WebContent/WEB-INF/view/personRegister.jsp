@@ -25,7 +25,7 @@
 		<br/>
 		<br/>
 		<label>First Name:</label>		<form:input path="firstName" class="form-control" placeholder="First name"/> <form:errors path="firstName" style="color:red"/>
-		<br/>
+		<br/> 
 		<br/>
 		<label>Last Name:</label>		<form:input path="lastName" class="form-control" placeholder="Last name"/> <form:errors path="lastName" style="color:red"/> 
 		<br/>
