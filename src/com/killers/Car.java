@@ -1,7 +1,5 @@
 package com.killers;
 
-import java.io.Serializable;
-
 public class Car extends Vehicle {
 	Car(String typeOfVehicle) {
 		super(typeOfVehicle);
