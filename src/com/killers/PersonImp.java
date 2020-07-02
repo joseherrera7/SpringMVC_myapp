@@ -3,11 +3,14 @@ package com.killers;
 public class PersonImp implements Person {
 	private String firstName;
 	private String lastName;
-	private String address;
+	private String email;
 	private String cellphone;
 	private String size;
-	private int id;
-
+	private String password;
+	private String gender;
+	private String languages;
+	private String preferredConsole;
+	
 	@Override
 	public String getGreetings() {
 		// TODO Auto-generated method stub
@@ -15,6 +18,14 @@ public class PersonImp implements Person {
 				.concat(" and I'm Welcome that you are here");
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -31,12 +42,12 @@ public class PersonImp implements Person {
 		this.lastName = lastName;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getCellphone() {
@@ -55,12 +66,27 @@ public class PersonImp implements Person {
 		this.size = size;
 	}
 
-	public int getId() {
-		return id;
+	public String getGender() {
+		return gender;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
+	public String getLanguages() {
+		return languages;
+	}
+	
+	public void setLanguages(String languages) {
+		this.languages = languages;
+	}
+
+	public String getPreferredConsole() {
+		return preferredConsole;
+	}
+
+	public void setPreferredConsole(String preferredConsole) {
+		this.preferredConsole = preferredConsole;
+	}
 }

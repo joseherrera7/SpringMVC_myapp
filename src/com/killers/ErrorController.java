@@ -6,27 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/main")
-public class HelloWorldController {
-	
-	@RequestMapping("/showForm")
-	public String showForm() { //gives the form
-		return "HelloWorldForm";
-	}
-	
-	/*@RequestMapping("/processForm")
-	public String processForm() {
-		return "ProcessingForm";
-	}*/
-	
-	
-	//HttpServletRequest request
+@RequestMapping("/secondary")
+public class ErrorController {
 	@RequestMapping("/processForm")
 	public String processForm(@RequestParam("UserName") String name, Model model) {
 		//String nombre = request.getParameter("UserName");
 		
 		//Adding info to the model
-		model.addAttribute("message", name.concat(" you are the best"));
+		model.addAttribute("message", name.concat(" you are the worst"));
 		
 		return "ProcessingForm";
 	}

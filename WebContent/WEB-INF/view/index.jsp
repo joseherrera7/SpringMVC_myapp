@@ -9,6 +9,7 @@
 </head>
 <body>
 	<h1>My first example</h1>
-	<h1><a href="showForm">Show form</a></h1>
+	<h1><a href="main/showForm">Show form</a></h1>
+	<h1><a href="person/showForm">Register</a></h1>
 </body>
 </html>
