@@ -23,21 +23,28 @@
 	<form:form action="processForm" modelAttribute="person">
 		<label>Email:</label>			<form:input path="email" class="form-control" placeholder="Email"/>
 		<br/>
-		<label>First Name:</label>		<form:input path="firstName" class="form-control" placeholder="First name"/>
 		<br/>
-		<label>Last Name:</label>		<form:input path="lastName" class="form-control" placeholder="Last name"/>
+		<label>First Name:</label>		<form:input path="firstName" class="form-control" placeholder="First name"/> <form:errors path="firstName" style="color:red"/>
+		<br/>
+		<br/>
+		<label>Last Name:</label>		<form:input path="lastName" class="form-control" placeholder="Last name"/> <form:errors path="lastName" style="color:red"/>
+		<br/>
 		<br/>
 		<label>Cellphone:</label>		<form:input path="cellphone" class="form-control" placeholder="Cellphone"/>
 		<br/>
+		<br/>
 		<label>Size:</label>			<form:input path="size" class="form-control" placeholder="Your size"/>
 		<br/>
+		<br/>
 		<label>Password:</label> 		<form:password path="password" class="form-control" placeholder="Password"/>
+		<br/>
 		<br/>
 		<label>Gender:</label>
 		<form:select path="gender" class="form-control">
 			<form:option value="Male" label="Male"></form:option>
 			<form:option value="Female" label="Female"></form:option>
 		</form:select>
+		<br/>
 		<br/>
 		<br/>
 		<label>Preferred gaming console:</label>
